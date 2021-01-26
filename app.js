@@ -15,7 +15,7 @@ const job = () => {
         const data = JSON.parse(body);
         const count = data.filter(event => moment(event.created_at).format("YYYY/MM/DD") === moment().format("YYYY/MM/DD")).length;
         console.log(`Today has ${count} contributions!`);
-        if (count === 4) {
+        if (count === 0) {
             if (config.webhook.type === "discord") {
                 request({
                     url: config.webhook.to, method: "POST", json: {
