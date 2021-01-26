@@ -1,8 +1,0 @@
-{
-    "daily": ["20:00"],
-    "username": "Your-github-username",
-    "webhook":{
-        "to": "https://discord.com/api/webhooks/***",
-        "type": "discord"
-    }
-}
