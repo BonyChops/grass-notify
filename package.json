@@ -1,0 +1,25 @@
+{
+  "name": "grass-notify",
+  "version": "1.0.0",
+  "description": "Notify whether contributed today or not / 今日GitHubにて草を生やしたかどうかを通知する",
+  "main": "app.js",
+  "dependencies": {
+    "moment": "^2.29.1",
+    "node-cron": "^2.0.3",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BonyChops/grass-notify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BonyChops/grass-notify/issues"
+  },
+  "homepage": "https://github.com/BonyChops/grass-notify#readme"
+}
