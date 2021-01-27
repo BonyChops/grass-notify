@@ -50,7 +50,7 @@ const job = () => {
 }
 
 cron.schedule("* * * * *", () => {
-    if (config.daily.some(time => moment(time).format("hh:mm") === moment().format("hh:mm"))) {
+    if (config.daily.some(time => time === moment().format("hh:mm"))) {
         job();
     }
 });
