@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
     "node-cron": "^2.0.3",
     "request": "^2.88.2"
   },

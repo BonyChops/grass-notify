@@ -1,9 +1,11 @@
 const cron = require('node-cron');
 const moment = require('moment');
+require('moment-timezone');
 const request = require('request');
 const fs = require('fs');
 const loadJSON = (fileName) => { return JSON.parse(fs.readFileSync(fileName)) };
 const config = loadJSON("./config.json");
+moment.tz.setDefault('Asia/Tokyo');
 
 const job = () => {
     request({ url: `https://api.github.com/users/${config.username}/events`, headers: { 'User-Agent': 'grass-notify' } }, (error, response, body) => {
@@ -54,3 +56,7 @@ cron.schedule("* * * * *", () => {
         job();
     }
 });
+
+(() => {
+    console.log("Running...");
+})()
