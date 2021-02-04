@@ -52,11 +52,12 @@ const job = () => {
 }
 
 cron.schedule("* * * * *", () => {
-    if (config.daily.some(time => time === moment().format("hh:mm"))) {
+    if (config.daily.some(time => time == moment().format("HH:mm"))) {
         job();
     }
 });
 
 (() => {
     console.log("Running...");
+    console.log(moment().format("HH:mm"));
 })()
