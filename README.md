@@ -9,6 +9,7 @@ Put `config.json` on root of directory.
     "username": "your-github-username",
     "webhook":{
         "to": "discord-webhook-uri",
+        "userId": "discord-your-id",
         "type": "discord"
     }
 }
