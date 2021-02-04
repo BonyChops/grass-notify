@@ -23,7 +23,7 @@ const job = () => {
                     url: config.webhook.to, method: "POST", json: {
                         "username": "grass-notify",
                         "avatar_url": "https://github.com/github.png",
-                        "content": `<@!308554186373464064> **Warning:**`,
+                        "content": `<@!${config.webhook.userId}> **Warning:**`,
                         "embeds": [
                             {
                                 "title": `${config.username}さん，今日の草が生えていません`,
